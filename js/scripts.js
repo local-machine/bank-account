@@ -3,6 +3,14 @@ function BankAccount(name, balance) {
   this.balance = balance
 }
 
+BankAccount.prototype.deposit = function(amount) {
+  this.balance += amount;
+}
+
+BankAccount.prototype.withdraw = function(amount) {
+  this.balance -= amount;
+}
+
 $(function () {
   $(".registerInput").submit(function(event) {
     event.preventDefault();
