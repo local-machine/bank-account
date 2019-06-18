@@ -10,7 +10,32 @@
   </head>
   <body>
     <div class="container">
-
+      <h1>Epicodus Credit Union</h1>
+      <h4>Please enter your infomation to create a new account.</h4>
+      <form class="registerInput">
+        <div class="form-group">
+          <label for="newName">Name</label>
+          <input type="text" class="form-control" id="newName">
+        </div>
+        <div class="form-group">
+          <label for="newDeposit">Initial Deposit</label>
+          <input type="number" class="form-control" id="newDeposit">
+        </div>
+        <button type="submit" class="btn btn-info">Register Account</button>
+      </form>
+      <br><br>
+      <h4>Make a deposit or withdrawal.</h4>
+      <form class="depositWithdrawal">
+        <div class="form-group">
+          <label for="deposit">Deposit Amount</label>
+          <input type="number" class="form-control" id="deposit">
+        </div>
+        <div class="form-group">
+          <label for="withdrawal">Withdrawal Amount</label>
+          <input type="number" class="form-control" id="withdrawal">
+        </div>
+        <button type="submit" class="btn btn-success">Make Deposit or Withdrawal</button>
+      </form>
     </div>
   </body>
 </html>
